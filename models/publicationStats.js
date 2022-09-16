@@ -1,11 +1,9 @@
 const mongoose = require("mongoose");
 
 const publicationStatsSchema = new mongoose.Schema({
-  year: {
-    journal: Number,
-    conference: Number,
-    book: Number,
-  },
+  year: Number,
+  citationType: String,
+  count: Number,
 });
 
 module.exports = mongoose.model("PublicationStats", publicationStatsSchema);
