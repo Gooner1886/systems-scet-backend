@@ -1,13 +1,15 @@
 const express = require('express');
 const router = express.Router();
 const {
-    getJournalCitations,
-    getConferenceCitations,
-    getBookCitations,
+    // getJournalCitations,
+    // getConferenceCitations,
+    // getBookCitations,
     getAllCitations
-} = require("../controllers/functionality.js");
+} = require("../controllers/publicationStats.js");
 
-router.route("/getJournalCitations").get(getJournalCitations);
-router.route("/getConferenceCitations").get(getConferenceCitations);
-router.route("/getBookCitations").get(getBookCitations);
+// router.route("/getJournalCitations").get(getJournalCitations);
+// router.route("/getConferenceCitations").get(getConferenceCitations);
+// router.route("/getBookCitations").get(getBookCitations);
 router.route("/getAllCitations").get(getAllCitations);
+
+module.exports = router;
