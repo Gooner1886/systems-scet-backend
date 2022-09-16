@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+<<<<<<< HEAD
 // const {
 //     getJournalCitations,
 //     getConferenceCitations,
@@ -7,10 +8,19 @@ const router = express.Router();
 //     getAllCitations
 // } = require("../controllers/functionality.js");
 const User=require("../controllers/User")
+=======
+const {
+    // getJournalCitations,
+    // getConferenceCitations,
+    // getBookCitations,
+    getAllCitations
+} = require("../controllers/publicationStats.js");
+>>>>>>> 9aef8b4a7924dafa9f3f782dc18259160b2d20a8
 
 // router.route("/getJournalCitations").get(getJournalCitations);
 // router.route("/getConferenceCitations").get(getConferenceCitations);
 // router.route("/getBookCitations").get(getBookCitations);
+<<<<<<< HEAD
 // router.route("/getAllCitations").get(getAllCitations);
 
 router.route("/signIn").post(User.sign_in);
@@ -31,3 +41,8 @@ router.use(function(req, res, next) {
 });
 
 module.exports=router;
+=======
+router.route("/getAllCitations").get(getAllCitations);
+
+module.exports = router;
+>>>>>>> 9aef8b4a7924dafa9f3f782dc18259160b2d20a8

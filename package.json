@@ -14,6 +14,10 @@
     "axios": "^0.27.2",
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.2",
+<<<<<<< HEAD
+=======
+    "express": "^4.18.1",
+>>>>>>> 9aef8b4a7924dafa9f3f782dc18259160b2d20a8
     "graphql": "^16.6.0",
     "graphql-subscriptions": "^2.0.0",
     "jsonwebtoken": "^8.5.1",
