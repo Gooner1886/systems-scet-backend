@@ -1,4 +1,5 @@
 const express = require("express");
+const { VerifyCaptcha } = require("../captcha");
 const router = express.Router();
 const {
   //     getJournalCitations,
@@ -22,26 +23,6 @@ router
 router.route("/signIn").post(User.sign_in);
 router.route("/getUserDetails").post(User.details);
 
-//authorization using JWT
-router.use(function (req, res, next) {
-  if (
-    req.headers &&
-    req.headers.authorization &&
-    req.headers.authorization.split(" ")[0] === "JWT"
-  ) {
-    jsonwebtoken.verify(
-      req.headers.authorization.split(" ")[1],
-      process.env.SECRET,
-      function (err, decode) {
-        if (err) req.user = undefined;
-        req.user = decode;
-        next();
-      }
-    );
-  } else {
-    req.user = undefined;
-    next();
-  }
-});
+router.route("/verifyCaptcha").post(VerifyCaptcha);
 
 module.exports = router;

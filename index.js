@@ -2,11 +2,13 @@ const express = require("express");
 const functionality = require("./routes/functionality");
 const app = express();
 const connectDB = require("./db/connect");
+const cors=require('cors')
 // const notFound = require('./middleware/not-found')
 require("dotenv").config();
 
 //Middleware
 app.use(express.json());
+app.use(cors());
 
 app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
