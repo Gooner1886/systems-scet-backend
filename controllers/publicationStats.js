@@ -31,76 +31,76 @@ const deletePublicationStats = async (req, res) => {
 
 module.exports = { getAllCitations, postCitationStats, deletePublicationStats };
 
-
 [
   {
-    "year": 2017,
-    "citationType": "Journal",
-    "count": 404
+    year: 2017,
+    citationType: "Journal",
+    count: 418,
   },
   {
-      "year": 2017,
-      "citationType": "Conference",
-      "count": 220
+    year: 2017,
+    citationType: "Conference",
+    count: 311,
   },
   {
-      "year": 2017,
-      "citationType": "Book",
-      "count": 8
+    year: 2017,
+    citationType: "Book",
+    count: 10,
   },
   {
-      "year": 2018,
-      "citationType": "Journal",
-      "count": 387
+    year: 2018,
+    citationType: "Journal",
+    count: 565,
   },
   {
-      "year": 2018,
-      "citationType": "Conference",
-      "count": 343
+    year: 2018,
+    citationType: "Conference",
+    count: 449,
   },
   {
-      "year": 2018,
-      "citationType": "Book",
-      "count": 18
+    year: 2018,
+    citationType: "Book",
+    count: 23,
   },
   {
-      "year": 2019,
-      "citationType": "Journal",
-      "count": 417
+    year: 2019,
+    citationType: "Journal",
+    count: 636,
   },
   {
-      "year": 2019,
-      "citationType": "Conference",
-      "count": 438
+    year: 2019,
+    citationType: "Conference",
+    count: 555,
+  },
+  { year: 2019, citationType: "Book", count: 32 },
+  {
+    year: 2020,
+    citationType: "Journal",
+    count: 700,
   },
   {
-      "year": 2020,
-      "citationType": "Journal",
-      "count": 462
+    year: 2020,
+    citationType: "Conference",
+    count: 633,
   },
   {
-      "year": 2020,
-      "citationType": "Conference",
-      "count": 469
+    year: 2020,
+    citationType: "Book",
+    count: 58,
   },
   {
-      "year": 2020,
-      "citationType": "Book",
-      "count": 51
+    year: 2021,
+    citationType: "Journal",
+    count: 835,
   },
   {
-      "year": 2021,
-      "citationType": "Journal",
-      "count": 605
+    year: 2021,
+    citationType: "Conference",
+    count: 681,
   },
   {
-      "year": 2021,
-      "citationType": "Conference",
-      "count": 542
+    year: 2021,
+    citationType: "Book",
+    count: 79,
   },
-  {
-      "year": 2021,
-      "citationType": "Book",
-      "count": 55
-  }
-]
+];

@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 const userProfileSchema = new mongoose.Schema({
     name: String,
-    img: JSON,
+    img: String,
+    emailid: String,
     intro: String,
     title: String,
     position: String,
